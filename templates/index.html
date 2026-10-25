@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог: Достижения и навыки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Блог студента</h1>
+        <p>Добро пожаловать! Меня зовут <strong> Veronik </strong>, и это моя страница достижений.</p>
+    </header>
+
+    <main>
+        <section class="profile">
+            <!-- Задайте правильный размер картинки в CSS -->
+            <img src="{{ url_for('static', filename='avatar.png') }}" alt="Мое фото">
+            <h2>Обо мне</h2>
+            <p>Я увлечена веб-разработкой и активно изучаю Python и фреймворк Flask. 
+               В этом блоге я собираю свои успехи и анализирую прогресс.</p>
+        </section>
+
+        <section class="progress">
+            <h2>Успеваемость по дисциплинам</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Python</th>
+                        <th>HTML & CSS</th>
+                        <th>JavaScript</th>
+                        <th>SQL</th>
+                        <th>Git</th>
+                        <th>Flask</th>
+                        <th>Docker</th>
+                        <th>Linux</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 1 строка: % выполнения темы -->
+                    <tr>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 2 строка: % выполнения ДЗ -->
+                    <tr>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 3 строка: Комментарии -->
+                    <tr>
+                        <td>Изучено полностью</td>
+                        <td>Изучено полностью</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мой блог. Все права защищены.</p>
+    </footer>
+</body>
+</html>
